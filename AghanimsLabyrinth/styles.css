@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#hero-page {
+    position: absolute;
+    width: 100%;
+    background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg);
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#ban-title {
+    font-family: "Reaver";
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 3px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#hero-attributes-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#hero-attributes {
+    width: 810px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 18px 30px;
+    border: 1px solid #11111190;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px #00000050;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+.attribute {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.attribute > span {
+    font-family: "Radiance";
+    font-weight: normal;
+    font-size: 18px;
+    color: #808fa6;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+#attribute-strength {
+    margin-right: auto;
+    justify-content: flex-start;
+}
+
+#attribute-agility {
+    justify-content: center;
+}
+
+#attribute-intelligence {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.attribute-icon {
+    filter: brightness(0.5) saturate(0);
+}
+
+
+#hero-grid {
+    width: 1080px;
+    margin: 20px auto 20px auto;
+}
+
+
+.hero-cell:nth-child(odd) {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.hero-cell:nth-child(even) {
+    padding-left: 5px;
+}
+
+.hero-image {
+    width: 128px;
+    height: 72px;
+    box-shadow: 1px 1px 3px #000000;
+}
+
+
+
+@font-face {
+    font-family: "Radiance";
+    src: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Radiance";
+    src: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Reaver";
+    src: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Reaver";
+    src: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-SemiBold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Reaver";
+    src: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Bold.woff);
+    font-weight: bold;
+}
