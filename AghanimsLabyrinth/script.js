@@ -78,9 +78,9 @@ function addHeroImages() {
             heroCell.appendChild(heroImage);
             heroImage.src = heroImageURL;
             heroImage.classList.add("hero-image");
-            heroCell.dataset.hero = hero;
-            heroCell.dataset.attribute = attribute;
-            heroCell.addEventListener('click', showAbilities);
+            heroImage.dataset.hero = hero;
+            heroImage.dataset.attribute = attribute;
+            heroImage.addEventListener('click', showAbilities);
         }
     }
 }
