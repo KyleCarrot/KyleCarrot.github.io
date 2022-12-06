@@ -4,17 +4,24 @@ const heroesData = {
             nickname: 'centaur',
             upgrades: {
                 'hoof_stomp': {
-                    '🚫 Upgrade name 🚫': 'Adsfn adjkfn jkaf njdkdajkn dfjnkajknajndsfn akjdsjnf akjnsdf kjnasdkjdnf asjnkd fjnkads jkndfjdaknsjknafd jnkdjkn',
-                    'Upgrade name 2': 'Adsfkjn anjksd fjknad kjnf adsjkn kjnfdask jnfkjnadskjn jfnad jnjfna kdsjn fajn kjndakfjn kjnd akjnd jknfdaskj najkn jadnkf jknadsjk dfjkan jknadf jknad jkndjkn jakn jnkfdsajkn jkdnsa'
+                    "Raise the Hoof": "On active cast, Stomp grants Stampede buff, lasting for %dur_mul%x stun duration.",
+                    "Centaur's Kick": "Stomp retaliates all affected enemies once.",
+                    "🚫 Minion Warriors 🚫": "Centaur keeps %minions% minion warriors. Minions are not controllable, shares Centaur's ATK, Armor and %hp_pct%%%HP, and cast stomp together with Centaur. Minions' respawn time equals to Stomp's CD. Minions are sent away from the battlefield when Centaur is dead."
                 },
                 'double_edge': {
-
+                    "Bloody Battle": "Double Edge gains STR stacks on hit. The STR per stack equals to Retaliate's damage per stack, the individual stack duration equals to Retaliate's, and the stack limits equals to %stacks_mul%x of Retaliate's. Every captain&boss strike respectively gains %str_captain% & %str_boss% stacks.",
+                    "Infernal Menace": "Double Edge pierces spell imunity. Instead of dealing a magical damage instance, it issues a critical attack with bonus magical damage. The bonus damage equals to base damage and crit equals to strength bonus + 100%.",
+                    "Cut in Two": "Double Edge becomes a ground target ability: Launch a shockwave travels up to %range% distance and damages all enemies hit."
                 },
                 'return': {
-
+                    "Domineering": "When self-damaged, Retaliate strikes all enemies within %radius% radius.",
+                    "Retaliate Fury": "Retaliate cleaves. Retaliate active buff also grants %damage_pct%%% attack cleave.",
+                    "Retaliate Aura": "Retaliate becomes an aura with %radius% radius."
                 },
                 'stampede': {
-
+                    "Hitch A Ride": "New abilities: Wargon, Pick Up. Toggle Wargon ON to summon a cart, then cast Pick Up to toss a unit into the cart.",
+                    "Assault Rush": "Stampede grants %reduction%%% incoming damage reduction and free pathing. Stampede deals bonus damage equal to %ms_damage%%% movespeed multiplies STR multiplier.",
+                    "War Stomp": "During Stampede, units stomp every %distance% distance moved with %mul%x power."
                 }
             }
         },
@@ -56,16 +63,24 @@ const heroesData = {
             nickname: 'dragon_knight',
             upgrades: {
                 'breathe_fire': {
-
+                    "Fire Blast": "Breathes fire in %fires% directions.",
+                    "Scorching Flame": "Breathe Fire debuff now burns affected enemy, dealing %damage_percent%%% of fire's damage per second, with a interval of %interval% second.",
+                    "": ""
                 },
                 'dragon_tail': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'dragon_blood': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'elder_dragon_form': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -73,16 +88,24 @@ const heroesData = {
             nickname: 'huskar',
             upgrades: {
                 'inner_fire': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'burning_spear': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'berserkers_blood': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'life_break': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -90,16 +113,24 @@ const heroesData = {
             nickname: 'kunkka',
             upgrades: {
                 'torrent': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'tidebringer': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'x_marks_the_spot': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'ghostship': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -107,16 +138,24 @@ const heroesData = {
             nickname: 'magnataur',
             upgrades: {
                 'shockwave': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'empower': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'skewer': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'reverse_polarity': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -124,16 +163,24 @@ const heroesData = {
             nickname: 'mars',
             upgrades: {
                 'spear': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'gods_rebuke': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'bulwark': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'arena_of_blood': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -141,16 +188,24 @@ const heroesData = {
             nickname: 'omniknight',
             upgrades: {
                 'purification': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'martyr': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'hammer_of_purity': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'guardian_angel': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -158,16 +213,24 @@ const heroesData = {
             nickname: 'phoenix',
             upgrades: {
                 'icarus_dive': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'fire_spirits': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'sun_ray': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'supernova': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -175,16 +238,24 @@ const heroesData = {
             nickname: 'pudge',
             upgrades: {
                 'meat_hook': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'rot': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'flesh_heap': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'dismember': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -193,16 +264,24 @@ const heroesData = {
             imageName: 'sandking',
             upgrades: {
                 'burrowstrike': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'sand_storm': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'caustic_finale': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'epicenter': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -210,16 +289,24 @@ const heroesData = {
             nickname: 'snapfire',
             upgrades: {
                 'scatterblast': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'firesnap_cookie': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'lil_shredder': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'mortimer_kisses': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -227,16 +314,24 @@ const heroesData = {
             nickname: 'spirit_breaker',
             upgrades: {
                 'charge_of_darkness': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'bulldoze': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'greater_bash': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'nether_strike': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -244,16 +339,24 @@ const heroesData = {
             nickname: 'sven',
             upgrades: {
                 'storm_bolt': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'great_cleave': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'warcry': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'gods_strength': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -261,16 +364,24 @@ const heroesData = {
             nickname: 'tusk',
             upgrades: {
                 'ice_shards': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'snowball': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'tag_team': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'walrus_punch': {
-                    
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         },
@@ -278,16 +389,24 @@ const heroesData = {
             nickname: 'undying',
             upgrades: {
                 'decay': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'soul_rip': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'tombstone': {
-
+                    "": "",
+                    "": "",
+                    "": ""
                 },
                 'flesh_golem': {
-                    
+                    "": "",
+                    "": "",
+                    "": ""
                 }
             }
         }
@@ -306,7 +425,7 @@ const heroesData = {
 
                 },
                 'mana_void': {
-                    
+
                 }
             }
         },
@@ -323,7 +442,7 @@ const heroesData = {
 
                 },
                 'track': {
-                    
+
                 }
             }
         },
@@ -340,7 +459,7 @@ const heroesData = {
 
                 },
                 'death_pact': {
-                    
+
                 }
             }
         },
@@ -357,7 +476,7 @@ const heroesData = {
 
                 },
                 'marksmanship': {
-                    
+
                 }
             }
         },
@@ -374,7 +493,7 @@ const heroesData = {
 
                 },
                 'fire_remnant': {
-                    
+
                 }
             }
         },
@@ -391,7 +510,7 @@ const heroesData = {
 
                 },
                 'call_down': {
-                    
+
                 }
             }
         },
@@ -408,7 +527,7 @@ const heroesData = {
 
                 },
                 'omni_slash': {
-                    
+
                 }
             }
         },
@@ -425,7 +544,7 @@ const heroesData = {
 
                 },
                 'eclipse': {
-                    
+
                 }
             }
         },
@@ -442,7 +561,7 @@ const heroesData = {
 
                 },
                 'gyroshell': {
-                    
+
                 }
             }
         },
@@ -459,7 +578,7 @@ const heroesData = {
 
                 },
                 'coup_de_grace': {
-                    
+
                 }
             }
         },
@@ -476,7 +595,7 @@ const heroesData = {
 
                 },
                 'requiem': {
-                    
+
                 }
             }
         },
@@ -493,7 +612,7 @@ const heroesData = {
 
                 },
                 'shadow_dance': {
-                    
+
                 }
             }
         },
@@ -510,7 +629,7 @@ const heroesData = {
 
                 },
                 'assassinate': {
-                    
+
                 }
             }
         },
@@ -527,7 +646,7 @@ const heroesData = {
 
                 },
                 'haunt': {
-                    
+
                 }
             }
         },
@@ -544,7 +663,7 @@ const heroesData = {
 
                 },
                 'psionic_trap': {
-                    
+
                 }
             }
         },
@@ -561,7 +680,7 @@ const heroesData = {
 
                 },
                 'enrage': {
-                    
+
                 }
             }
         },
@@ -578,7 +697,7 @@ const heroesData = {
 
                 },
                 'poison_nova': {
-                    
+
                 }
             }
         },
@@ -595,7 +714,7 @@ const heroesData = {
 
                 },
                 'viper_strike': {
-                    
+
                 }
             }
         },
@@ -612,7 +731,7 @@ const heroesData = {
 
                 },
                 'time_lapse': {
-                    
+
                 }
             }
         }
@@ -631,7 +750,7 @@ const heroesData = {
 
                 },
                 'fiends_grip': {
-                    
+
                 }
             }
         },
@@ -648,7 +767,7 @@ const heroesData = {
 
                 },
                 'freezing_field': {
-                    
+
                 }
             }
         },
@@ -665,7 +784,7 @@ const heroesData = {
 
                 },
                 'static_storm': {
-                    
+
                 }
             }
         },
@@ -682,7 +801,7 @@ const heroesData = {
 
                 },
                 'chain_frost': {
-                    
+
                 }
             }
         },
@@ -699,7 +818,7 @@ const heroesData = {
 
                 },
                 'laguna_blade': {
-                    
+
                 }
             }
         },
@@ -716,7 +835,7 @@ const heroesData = {
 
                 },
                 'finger_of_death': {
-                    
+
                 }
             }
         },
@@ -733,7 +852,7 @@ const heroesData = {
 
                 },
                 'reapers_scythe': {
-                    
+
                 }
             }
         },
@@ -750,7 +869,7 @@ const heroesData = {
 
                 },
                 'multicast': {
-                    
+
                 }
             }
         },
@@ -767,7 +886,7 @@ const heroesData = {
 
                 },
                 'sonic_wave': {
-                    
+
                 }
             }
         },
@@ -784,7 +903,7 @@ const heroesData = {
 
                 },
                 'ball_lightning': {
-                    
+
                 }
             }
         },
@@ -801,7 +920,7 @@ const heroesData = {
 
                 },
                 'land_mines': {
-                    
+
                 }
             }
         },
@@ -818,7 +937,7 @@ const heroesData = {
 
                 },
                 'astral_step': {
-                    
+
                 }
             }
         },
@@ -835,7 +954,7 @@ const heroesData = {
 
                 },
                 'rain_of_chaos': {
-                    
+
                 }
             }
         },
@@ -852,7 +971,7 @@ const heroesData = {
 
                 },
                 'winters_curse': {
-                    
+
                 }
             }
         },
@@ -869,7 +988,7 @@ const heroesData = {
 
                 },
                 'death_ward': {
-                    
+
                 }
             }
         }
