@@ -157,6 +157,37 @@ body {
     margin-bottom: 6px;
 }
 
+.divider {
+    width: 900px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+#items {
+    margin-bottom: 60px;
+}
+
+.banned-item {
+    width: 66px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-name {
+    color: #ffffff;
+    font-family: "Reaver";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 
 @font-face {
     font-family: "Radiance";
