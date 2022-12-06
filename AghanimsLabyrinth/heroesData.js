@@ -1,4 +1,4 @@
-let heroes = {
+const heroesData = {
     'strength': {
         'Centaur Warrunner': {
             nickname: 'centaur',
