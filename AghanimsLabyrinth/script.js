@@ -80,6 +80,7 @@ function addHeroImages() {
             heroImage.classList.add("hero-image");
             heroImage.dataset.hero = hero;
             heroImage.dataset.attribute = attribute;
+            preloadAbilityImages(hero, attribute);
             heroImage.addEventListener('click', showAbilities);
         }
     }
@@ -132,6 +133,19 @@ function showAbilities(e) {
 function hideAbilities() {
     document.getElementById("abilities-overlay").remove();
     document.getElementById("abilities-underlay").remove();
+}
+
+function preloadAbilityImages(hero, attribute) {
+    const heroData = heroes[attribute][hero];
+    let abilityImageBaseURL = imageBaseURL + 'abilities/' + heroData['nickname'] + '_';
+    if (heroData.hasOwnProperty('imageName')) {
+        abilityImageBaseURL = imageBaseURL + 'abilities/' + heroData['imageName'] + '_';
+    }
+    for (const ability of Object.keys(heroData['upgrades'])) {
+        const abilityImageURL = abilityImageBaseURL + ability + '.png';
+        let img = new Image();
+        img.src = abilityImageURL;
+    }
 }
 
 
