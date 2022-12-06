@@ -78,17 +78,10 @@ body {
     filter: brightness(0.5) saturate(0);
 }
 
-
 #hero-grid {
     width: 1080px;
     margin: 20px auto 20px auto;
 }
-
-
-
-/*.hero-row, .hero-cell {
-    pointer-events: none;
-}*/
 
 .hero-cell:nth-child(odd) {
     text-align: right;
