@@ -1,3 +1,4 @@
+const heroes = heroesData;
 const imageBaseURL = 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/'
 const heroPage = document.getElementById("hero-page");
 
