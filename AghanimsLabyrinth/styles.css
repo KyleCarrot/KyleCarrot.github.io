@@ -84,6 +84,12 @@ body {
     margin: 20px auto 20px auto;
 }
 
+
+
+/*.hero-row, .hero-cell {
+    pointer-events: none;
+}*/
+
 .hero-cell:nth-child(odd) {
     text-align: right;
     padding-right: 5px;
@@ -94,12 +100,23 @@ body {
 }
 
 .hero-image {
+    z-index: 1;
     width: 128px;
     height: 72px;
     box-shadow: 1px 1px 3px #000000;
 }
 
+#abilities-underlay {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
 #abilities-overlay {
+    z-index: 2;
     position: fixed;
     width: 480px;
     height: 630px;
@@ -110,14 +127,6 @@ body {
     background: linear-gradient(225deg, #252728 0%, #101415 100%);
     border: 2px solid #282828;
     box-shadow: 0px 0px 8px #000000;
-}
-
-#abilities-underlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
 }
 
 .ability-container {
