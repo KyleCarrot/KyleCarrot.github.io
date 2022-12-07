@@ -6,7 +6,7 @@ const heroesData = {
                 'hoof_stomp': {
                     "Raise the Hoof": "On active cast, Stomp grants Stampede buff, lasting for %dur_mul%x stun duration.",
                     "Centaur's Kick": "Stomp retaliates all affected enemies once.",
-                    "🚫 Minion Warriors 🚫": "Centaur keeps %minions% minion warriors. Minions are not controllable, shares Centaur's ATK, Armor and %hp_pct%%%HP, and cast stomp together with Centaur. Minions' respawn time equals to Stomp's CD. Minions are sent away from the battlefield when Centaur is dead."
+                    "Minion Warriors 🛑": "Centaur keeps %minions% minion warriors. Minions are not controllable, shares Centaur's ATK, Armor and %hp_pct%%%HP, and cast stomp together with Centaur. Minions' respawn time equals to Stomp's CD. Minions are sent away from the battlefield when Centaur is dead."
                 },
                 'double_edge': {
                     "Bloody Battle": "Double Edge gains STR stacks on hit. The STR per stack equals to Retaliate's damage per stack, the individual stack duration equals to Retaliate's, and the stack limits equals to %stacks_mul%x of Retaliate's. Every captain&boss strike respectively gains %str_captain% & %str_boss% stacks.",
@@ -65,22 +65,22 @@ const heroesData = {
                 'breathe_fire': {
                     "Fire Blast": "Breathes fire in %fires% directions.",
                     "Scorching Flame": "Breathe Fire debuff now burns affected enemy, dealing %damage_percent%%% of fire's damage per second, with a interval of %interval% second.",
-                    "": ""
+                    "Majestic Fire": "Breathe Fire now steals a percentage of the reduced attack damage from enemy. The stealing percentage is %creep_pct%%% on creeps and %captain_pct%%% on captains and bosses."
                 },
                 'dragon_tail': {
-                    "": "",
-                    "": "",
-                    "": ""
+                    "Scorns of Ultimate Defeat": "Dragon Tail applies a debuff when stunning the victim. During the debuff, the victim receives %pct%%% more physical damage from Dragon Knight per BASE armor.",
+                    "Captain Velociraptor": "Dragon Tail bounces up to %bounces% times with %bounce_range% search range. The projectile returns to Dragon Knight when bounce ends, and reduce the CD of Dragon Form equal to total bounce times multiplies stun duration.",
+                    "Dragon's Gunfire": "Dragon Tail launches a fireball on hit, burning the ground and dealing damage to enemies in %radius% area. The burning ground lasts %duration% seconds, with %damage_pct%%% of Breathe Fire damage per second, and applies Breathe Fire debuff."
                 },
                 'dragon_blood': {
-                    "": "",
-                    "": "",
-                    "": ""
+                    "The Melody of Awakening Dragon": "When Dragon Form is ready, Dragon Knight automatically casts Dragon Form if health goes under %thres%%%, and heal himself with amount %heal%x as Dragon Blood's health regen. Apply a strong dispel on triggered.",
+                    "Boiling Veins": "Dragon's Blood continously burns enemies nearby. Dealing %regen_damage%x of Dragon Blood's health regen as magical damage per second. The damage radius is %extra_range% plus Dragon Knight's attack range. Also applies Dragon Breath debuffs if in Elder Dragon Form.",
+                    "Reverse Scales": "Dragon's Armor now counters attackers with Dragon Tail. The trigger chance for attack is %chance_base%%% + %chance_armor%%% per armor bonus. Chance for spell is %chance_spell%%% of that. If attacker is %range_buffer% farther than Tail's cast range, counters will not happen."
                 },
                 'elder_dragon_form': {
-                    "": "",
-                    "": "",
-                    "": ""
+                    "Dragon of Legends": "Elder Dragon Form now has the effect of the next level. If upgraded to LV3, it will be black ancient dragon who has stronger stats and can pass trough terrains.",
+                    "Dragon's Family": "Elder Dragon Form now turns all allied heroes in %radius% into dragon if toggled autocast.",
+                    "Ultimate Dragons": "Heroes in Elder Dragon Form has %attacks% multishot, extra attacks use procs but with damage reduced by %reduction%%%. Only Dragon Knight can multishoot the same target in Elder Dragon Form."
                 }
             }
         },
@@ -416,10 +416,14 @@ const heroesData = {
             nickname: 'antimage',
             upgrades: {
                 'mana_break': {
-
+                    "Mana Transfer": "While breaking mana, Antimage transfer them to his health for %transfer_pct%%  of the amount",
+                    "Mana Explosion": "Antimages have a %chance%%  chance to cast a Mana Void with %effect_pct%%  effect after each mana break",
+                    "Imagine Breaker": "Mana Break also applies a stackable spell damage reduction debuff lasting %duration% secs, the reduction amount per stack is the same as Mana Breaker's max mana pct"
                 },
                 'blink': {
-
+                    "Blinking Illusion": "Blink now leaves an uncontrollable illusion. This illusion replicate's Counterspell casting.",
+                    "This illusion replicate's Counterspell casting.": "Blink and Fragment now trigger an addtional Counterspell when casted",
+                    "Blink Fragment": "New ability: Antimage blinks an illusion to the target position. The new ability's cooldown/manacost and blink distance are bound to origin ability. blinked illusion replicate's Counterspell casting."
                 },
                 'counterspell': {
 
