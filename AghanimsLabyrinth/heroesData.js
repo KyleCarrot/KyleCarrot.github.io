@@ -29,16 +29,24 @@ const heroesData = {
             nickname: 'rattletrap',
             upgrades: {
                 'battery_assault': {
-
+                    "Ricochet": "Each battery bounces once to another random target.",
+                    "Bullet Hell": "Shrapnels now proc attack on hit, with %damage_reduction%%% attack damage reduction.",
+                    "Auto-Killer No.3000": "Clockwerk has a %chance_atk%%%/%chance_spell%%% chance to trigger a Battery Assult with %pct%%% duration."
                 },
                 'power_cogs': {
-
+                    "Epicyclic": "Casting Power Cogs creates an extra outer cogs ring.",
+                    "Tesla MX": "Cogs' shocking charge now recovers every %interval% seconds, and also shocks all outer enemies within %range%.",
+                    "Tactical Cogs": "Cogs now carries Batteries with %pct%%% amount."
                 },
                 'rocket_flare': {
-
+                    "Cluster Rocket": "Each Rocket now splits into %clusters% clusters.",
+                    "Energy Beacon": "Each Rocket lays a cog every %distance% units it travels.",
+                    "Airdrop": "Rocket drops a breakable crate on explosion."
                 },
                 'hookshot': {
-
+                    "Splatoon": "Clockwerk launches a rocket from both sides every %distance% units it travels during HookShot flying.",
+                    "Gearbox": "New Ability: Gear Up. Comsume all cogs nearby to gain extra movement speed and attack damage for a short moment. The ATK bonus per cog is based on Hook's damage.",
+                    "Rocket Man": "New Ability: Jetpack. Grant Clockwerk flying vision and movement but limit his turn rate. Clockwerk has no cast angle limit during the ride, and auto shoots rocket every second."
                 }
             }
         },
@@ -46,16 +54,24 @@ const heroesData = {
             nickname: 'dawnbreaker',
             upgrades: {
                 'fire_wreath': {
-
+                    "Stand Ablaze": "Starbreaker creates trails of your current level of Celestial Hammer fire when impacting an enemy.",
+                    "Counter Orbital": "When attacked, Dawnbreaker has a 17% chance to counter attack with a swipe of Starbreaker. The normal charged-up attack of Luminosity has a 33% chance to be a Starbreaker smash.",
+                    "Sun Crusher": "Starbreaker gains the ability to turn, movement speed equal to 25% of her current movement speed, and swings 35% faster. Dawnbreaker is magic immune for the duration"
                 },
                 'celestial_hammer': {
-
+                    "Hammer Time": "Celestial Hammer gains 3 charges. Your Starbreaker smash is triggered when the Hammer lands, and Converge becomes point targeted, allowing you to choose which hammer to converge to.",
+                    "Sun Forge": "Celestial Hammer now creates a moving trail of fire between it and Dawnbreaker until recalled, and lasts an additional 3 seconds in the world before automatically returning.",
+                    "Haven": "While in the world, Celestial Hammer pulses at 50% of your current Solar Guardian radius and heal / damage."
                 },
                 'luminosity': {
-
+                    "Solar Battery": "Dawnbreaker gains bonuses up to 25% movement speed and 75 attack speed while Luminosity has any active stacks, reaching the maximum when Luminosity is fully powered up.",
+                    "Bright Foundry": "Dawnbreaker's attacks passively apply 1 second(s) of Celestial Hammer fire debuff. The charged up attack of Luminosity launches your current level of Celestial Hammer in Dawnbreaker's facing direction. This fire debuff stacks with other sources of Celestial Hammer fire.",
+                    "Light Bringer": "Luminosity may be activated to fully charge for 5 seconds. Cooldown: 60, Mana Cost: 100."
                 },
                 'solar_guardian': {
-
+                    "Sun Sentinel": "Upon landing, Dawnbreaker and all allies in Solar Guardian's radius gain 3 seconds of magic immunity and fully charged Luminosity attacks.",
+                    "Death of a Star": "Whenever Solar Guardian is cast, all non-primary targets have 50% Solar Guardian pulses created around them until Dawnbreaker lands. When dying, Dawnbreaker automatically casts Solar Guardian on the lowest health ally (herself if no others alive).",
+                    "Solar Flare": "Upon landing, all enemies inside Solar Guardian's area are knocked back and receive the current level of Celestial Hammer fire debuff for 6 seconds. This fire debuff stacks with other sources of Celestial Hammer fire."
                 }
             }
         },
